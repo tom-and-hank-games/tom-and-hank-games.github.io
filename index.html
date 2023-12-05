@@ -9,32 +9,43 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play rainbow end.</tw-noscript></noscript></tw-story>
-<tw-storydata name="rainbow end" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="E604C9FD-8DCF-4763-8A72-CAD93177DE96" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="bo" tags="" position="200,100" size="100,100">&lt;center&gt;
+<tw-storydata name="rainbow end" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="E604C9FD-8DCF-4763-8A72-CAD93177DE96" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
+  color: pink;
+}
+
+tw-story[tags~="bo"] {
+background-image:url("bee.png");
+background-size:cover;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="bo" tags="bo" position="200,100" size="100,100">&lt;center&gt;
 &lt;img src=&quot;rainbow1.jpg&quot;&gt;
 &lt;audio src=&quot;rain.mp3&quot; autoplay&gt;
 
 &lt;/audio&gt;
 
 you are at a rainbow are you going to steal the gold [[steal]] or go see your friend [[bob]] or [[fry]]
-</tw-passagedata><tw-passagedata pid="2" name="steal" tags="" position="500,300" size="100,100">&lt;/style&gt;&lt;center&gt;
+
+
+
+(set:$name to &quot;kai&quot;)(set:$name to (prompt:&quot;what is your first name&quot;,&quot;&quot;))</tw-passagedata><tw-passagedata pid="2" name="steal" tags="" position="300,100" size="100,100">&lt;/style&gt;&lt;center&gt;
 &lt;img
 src=&quot;p.png&quot;&gt;
 
-if you want to seal but there is an [[elf]] or go see the [[flower]]
+if $name you want to seal but there is an [[elf]] or go see the [[flower]]
 
-&lt;audio src=&quot;13.mp3&quot; controls&gt;</tw-passagedata><tw-passagedata pid="3" name="elf" tags="" position="200,700" size="100,100">you go steal but the elf got you will you [[kick]] it or go to the [[flower]]</tw-passagedata><tw-passagedata pid="4" name="flower" tags="" position="750,500" size="100,100">the flower takes you home but every thing is [[nonsense]]</tw-passagedata><tw-passagedata pid="5" name="kick" tags="" position="550,575" size="100,100">you kick the elf you win you get the [[gold]]itnhas the dust you go to [[fly]]</tw-passagedata><tw-passagedata pid="6" name="gold" tags="" position="175,1000" size="100,100">you go to look at the [[flower]]</tw-passagedata><tw-passagedata pid="7" name="nonsense" tags="" position="250,500" size="100,100">(set: $dust to true)
+&lt;audio src=&quot;13.mp3&quot; controls&gt;</tw-passagedata><tw-passagedata pid="3" name="elf" tags="" position="300,400" size="100,100">you go steal but the elf got you will you [[kick]] it or go to the [[flower]]</tw-passagedata><tw-passagedata pid="4" name="flower" tags="" position="500,100" size="100,100">the flower takes you home but every thing is [[nonsense]]</tw-passagedata><tw-passagedata pid="5" name="kick" tags="" position="200,400" size="100,100">you kick the elf you win you get the [[gold]]itnhas the dust you go to [[fly]]</tw-passagedata><tw-passagedata pid="6" name="gold" tags="" position="400,400" size="100,100">you go to look at the [[flower]]</tw-passagedata><tw-passagedata pid="7" name="nonsense" tags="" position="200,300" size="100,100">(set: $dust to true)
 
-your mom talks to you say [[aaaarrr]]
+$name your mom talks to you say [[aaaarrr]]
 
-But mum has fairy dust [[fly]]</tw-passagedata><tw-passagedata pid="8" name="aaaarrr" tags="" position="500,1450" size="100,100">it was just a dream things are all nomal you are at the [[end]] you find the dust you go to [[fly]]</tw-passagedata><tw-passagedata pid="9" name="end" tags="" position="1275,775" size="100,100">you win well done you got the gold[[brave]]</tw-passagedata><tw-passagedata pid="10" name="brave" tags="" position="875,1000" size="100,100">you are with bob but he wants to send you away so you go to [[bo]] but then you want to see bob [[hand]] to see if he is nicer </tw-passagedata><tw-passagedata pid="11" name="bob" tags="" position="1150,225" size="100,100">you go see bob bob says hi you shake his [[hand]]</tw-passagedata><tw-passagedata pid="12" name="hand" tags="" position="825,325" size="100,100"> you want to be [[sacerd]]</tw-passagedata><tw-passagedata pid="13" name="sacerd" tags="" position="450,1025" size="100,100">yyyyyyyyyyyyyyyyyyyyyyyy [[fry]]</tw-passagedata><tw-passagedata pid="14" name="fry" tags="" position="200,200" size="100,100">(set: $dust to false)
+But mum has fairy dust [[fly]]</tw-passagedata><tw-passagedata pid="8" name="aaaarrr" tags="" position="300,200" size="100,100">it was just a dream things are all nomal you are at the [[end]] you find the dust you go to [[fly]]</tw-passagedata><tw-passagedata pid="9" name="end" tags="" position="500,400" size="100,100">you win well done you got the gold[[brave]] you want to [[stop]]</tw-passagedata><tw-passagedata pid="10" name="brave" tags="" position="500,200" size="100,100">$name you  are with bob but he wants to send you away so you go to [[bo]] but then you want to see bob [[hand]] to see if he is nicer </tw-passagedata><tw-passagedata pid="11" name="bob" tags="" position="400,200" size="100,100">you go see bob bob says hi you shake his [[hand]]</tw-passagedata><tw-passagedata pid="12" name="hand" tags="" position="400,300" size="100,100"> you want to be [[sacerd]]</tw-passagedata><tw-passagedata pid="13" name="sacerd" tags="" position="300,300" size="100,100">you go to  [[fry]]</tw-passagedata><tw-passagedata pid="14" name="fry" tags="" position="200,200" size="100,100">(set: $dust to false)
 
 
 you need fry dusst you go try [[fly]]
 
 you go look under the [[elf]]
-you go look at [[nonsense]]</tw-passagedata><tw-passagedata pid="15" name="fly" tags="" position="1275,150" size="100,100">(if: $dust is true)[ you flap your wings yay you can fly]
+you go look at [[nonsense]]</tw-passagedata><tw-passagedata pid="15" name="fly" tags="" position="400,100" size="100,100">(if: $dust is true)[ you flap your wings yay you can fly]
 
-(else:) [you try but you fall on the ground]</tw-passagedata><tw-passagedata pid="16" name="bo1" tags="" position="200,0" size="100,100">begin game [[bo]]</tw-passagedata></tw-storydata>
+(else:) [you try but you fall on the ground]</tw-passagedata><tw-passagedata pid="16" name="bo1" tags="" position="200,0" size="100,100">begin game [[bo]]</tw-passagedata><tw-passagedata pid="17" name="stop" tags="" position="500,300" size="100,100">you can stop at any time.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
