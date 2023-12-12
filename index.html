@@ -10,30 +10,85 @@
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play rainbow end.</tw-noscript></noscript></tw-story>
 <tw-storydata name="rainbow end" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="E604C9FD-8DCF-4763-8A72-CAD93177DE96" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story{
-  color: pink;
+  color: ;
+
 }
+.plain {
+  text-shadow: -1px 1px #000000,
+}
+.rain {text-shadow: -4px 4px #ef3550,
+    -8px 8px #f48fb1,
+    -12px 12px #7e57c2,
+    -16px 16px #2196f3,
+    -20px 20px #26c6da,
+    -24px 24px #43a047,
+    -28px 28px #eeff41,
+    -32px 32px #f9a825,
+    -36px 36px #ff5722;
+  
+  
+}
+tw-hook[name="rain"]{text-shadow: -4px 4px #ef3550,
+    -8px 8px #f48fb1,
+    -12px 12px #7e57c2,
+    -16px 16px #2196f3,
+    -20px 20px #26c6da,
+    -24px 24px #43a047,
+    -28px 28px #eeff41,
+    -32px 32px #f9a825,
+    -36px 36px #ff5722;
+  
+}
+  
 
 tw-story[tags~="bo"] {
 background-image:url("bee.png");
 background-size:cover;
+  text-shadow: -4px 4px #ef3550,
+    -8px 8px #f48fb1,
+    -12px 12px #7e57c2,
+    -16px 16px #2196f3,
+    -20px 20px #26c6da,
+    -24px 24px #43a047,
+    -28px 28px #eeff41,
+    -32px 32px #f9a825,
+    -36px 36px #ff5722;
+  
+
 }
+
+tw-story[tags~="fly"] {
+background-image:url("b.png");
+background-size:cover;
+}
+
+tw-story[tags~="flower"] {
+background-image:url("tree.png");
+background-size:cover;
+}
+
+tw-story[tags~="steal"] {
+background-image:url("m.jpg");
+background-size:cover;
+}
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="bo" tags="bo" position="200,100" size="100,100">&lt;center&gt;
 &lt;img src=&quot;rainbow1.jpg&quot;&gt;
 &lt;audio src=&quot;rain.mp3&quot; autoplay&gt;
 
 &lt;/audio&gt;
 
-you are at a rainbow are you going to steal the gold [[steal]] or go see your friend [[bob]] or [[fry]]
 
+&lt;p id=&quot;plain&quot;&gt;you are at a rainbow are you going to steal the gold [[steal]] or go see your friend [[bob]] or [[fry]]
+&lt;/p&gt;
 
-
-(set:$name to &quot;kai&quot;)(set:$name to (prompt:&quot;what is your first name&quot;,&quot;&quot;))</tw-passagedata><tw-passagedata pid="2" name="steal" tags="" position="300,100" size="100,100">&lt;/style&gt;&lt;center&gt;
+|rain&gt;[(set:$name to &quot;kai&quot;)(set:$name to (prompt:&quot;what is your first name&quot;,&quot;&quot;))]</tw-passagedata><tw-passagedata pid="2" name="steal" tags="steal" position="300,100" size="100,100">&lt;/style&gt;&lt;center&gt;
 &lt;img
 src=&quot;p.png&quot;&gt;
-
+&lt;div class=&quot;rain&quot;&gt;
 if $name you want to seal but there is an [[elf]] or go see the [[flower]]
-
-&lt;audio src=&quot;13.mp3&quot; controls&gt;</tw-passagedata><tw-passagedata pid="3" name="elf" tags="" position="300,400" size="100,100">you go steal but the elf got you will you [[kick]] it or go to the [[flower]]</tw-passagedata><tw-passagedata pid="4" name="flower" tags="" position="500,100" size="100,100">the flower takes you home but every thing is [[nonsense]]</tw-passagedata><tw-passagedata pid="5" name="kick" tags="" position="200,400" size="100,100">you kick the elf you win you get the [[gold]]itnhas the dust you go to [[fly]]</tw-passagedata><tw-passagedata pid="6" name="gold" tags="" position="400,400" size="100,100">you go to look at the [[flower]]</tw-passagedata><tw-passagedata pid="7" name="nonsense" tags="" position="200,300" size="100,100">(set: $dust to true)
+&lt;/div&gt;
+&lt;audio src=&quot;13.mp3&quot; controls&gt;</tw-passagedata><tw-passagedata pid="3" name="elf" tags="" position="300,400" size="100,100">you go steal but the elf got you will you [[kick]] it or go to the [[flower]]</tw-passagedata><tw-passagedata pid="4" name="flower" tags="flower" position="500,100" size="100,100">the flower takes you home but every thing is [[nonsense]]</tw-passagedata><tw-passagedata pid="5" name="kick" tags="" position="200,400" size="100,100">you kick the elf you win you get the [[gold]]itnhas the dust you go to [[fly]]</tw-passagedata><tw-passagedata pid="6" name="gold" tags="" position="400,400" size="100,100">you go to look at the [[flower]]</tw-passagedata><tw-passagedata pid="7" name="nonsense" tags="" position="200,300" size="100,100">(set: $dust to true)
 
 $name your mom talks to you say [[aaaarrr]]
 
@@ -43,9 +98,9 @@ But mum has fairy dust [[fly]]</tw-passagedata><tw-passagedata pid="8" name="aaa
 you need fry dusst you go try [[fly]]
 
 you go look under the [[elf]]
-you go look at [[nonsense]]</tw-passagedata><tw-passagedata pid="15" name="fly" tags="" position="400,100" size="100,100">(if: $dust is true)[ you flap your wings yay you can fly]
+you go look at [[nonsense]]</tw-passagedata><tw-passagedata pid="15" name="fly" tags="fly" position="400,100" size="100,100">(if: $dust is true)[ you flap your wings yay you can fly]
 
-(else:) [you try but you fall on the ground]</tw-passagedata><tw-passagedata pid="16" name="bo1" tags="" position="200,0" size="100,100">begin game [[bo]]</tw-passagedata><tw-passagedata pid="17" name="stop" tags="" position="500,300" size="100,100">you can stop at any time.</tw-passagedata></tw-storydata>
+(else:) [you try but you fall on the ground go look at [[fry]] or[[nonsense]]</tw-passagedata><tw-passagedata pid="16" name="bo1" tags="" position="200,0" size="100,100">begin game [[bo]]</tw-passagedata><tw-passagedata pid="17" name="stop" tags="" position="500,300" size="100,100">you can stop at any time.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
